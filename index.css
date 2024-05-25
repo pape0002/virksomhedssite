@@ -1,0 +1,191 @@
+body,
+main,
+html {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: "josefin-sans", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: white;
+  font-family: "josefin-sans", sans-serif;
+}
+
+.box1 {
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+.box2 {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 10px;
+}
+
+/* MOBIL */
+@media (max-width: 750px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+  }
+
+  h2 {
+    color: white;
+    font-family: "josefin-sans", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 45px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .box1 {
+    height: auto;
+    padding: 10px;
+  }
+
+  .box2 {
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .lottie {
+    position: absolute; /* Position absolutely within .grid_1-1 */
+    top: 0;
+    left: 0;
+    width: 50%; /* Cover only the left column */
+    height: 100%;
+    pointer-events: none; /* Ensure it doesn't interfere with other elements */
+    margin-left: -40px;
+    scale: 52%;
+  }
+
+  .tegning {
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+  }
+
+  .text {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .box3 {
+    margin-top: 30px;
+    height: auto;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box1 {
+    height: 700px;
+    padding: 30px;
+  }
+
+  video {
+    display: flex;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box2 {
+    width: 1480px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+  }
+
+  .lottie {
+    position: absolute;
+    scale: 90%;
+    margin-left: 1085px;
+    margin-top: 710px;
+  }
+
+  .tegning {
+    display: grid;
+    grid-column: 2/3;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    margin-top: -88%;
+    margin-left: 40px;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .box3 {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .centralkort {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .granola {
+    width: 7%;
+    position: relative;
+    margin-left: 560px;
+    margin-bottom: 1000px;
+    margin-top: -400px;
+  }
+
+  h2 {
+    color: white;
+    font-family: "josefin-sans", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    font-size: 45px;
+  }
+}
